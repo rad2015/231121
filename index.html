@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=DM+Serif+Display:ital@0;1&family=Familjen+Grotesk:ital,wght@1,500&family=Satisfy&display=swap" rel="stylesheet">
+
+    <title> 김나영 - 그라데이션 인트로 </title>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {
+            background: url("./images/gr.svg") no-repeat center/cover;
+            height: 100vh;
+            color: #fff;
+            /* background: linear-gradient(180deg, #FD97D4 0%, #8EC2FF 100%);
+            (각도, 1색상 범위, 2색상 범위) */
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* 수직 중앙정렬 */
+            height: 100vh;
+        }
+        .ani {
+            font-family: 'Caveat', cursive;
+font-family: 'DM Serif Display', serif;
+font-family: 'Familjen Grotesk', sans-serif;
+font-family: 'Satisfy', cursive;
+            font-size: 150px;
+            /* font-weight: 900; */
+            animation: slide-up 1s ease both;
+            /* text-shadow: 2px 2px 5px rgba(0,0,0,0.2); */
+            /* ease : 처음과 끝 느리게 시작
+            both : 애니메이션 종료 후 멈춤 */
+        }
+        
+        @keyframes slide-up {
+            /* from(시작) to(끝) */
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        .N {
+            animation-delay: 0s;
+        }
+        .Y {
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <!-- .box>.ani.A{A}*2 -->
+    <div class="box">
+        <div class="ani N">N</div>
+        <div class="ani Y">Y</div>
+        <!-- <div class="ani N">Everyone has</div>
+        <div class="ani Y">&nbsp;the right to Freedom</div> -->
+    </div>
+</body>
+</html>
